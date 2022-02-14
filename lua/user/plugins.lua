@@ -48,10 +48,17 @@ return packer.startup(function(use)
     use 'mhinz/vim-startify'
     use 'beauwilliams/statusline.lua'
 
+    use "kyazdani42/nvim-web-devicons"
+    use "kyazdani42/nvim-tree.lua"
+
+    use 'Mofiqul/dracula.nvim'
+
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    
+    use "p00f/nvim-ts-rainbow"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
