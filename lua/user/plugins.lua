@@ -45,6 +45,8 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
     use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+    use "numToStr/Comment.nvim" -- Easily comment stuff
+
     use 'mhinz/vim-startify'
     use 'beauwilliams/statusline.lua'
 
@@ -59,6 +61,25 @@ return packer.startup(function(use)
     }
     
     use "p00f/nvim-ts-rainbow"
+
+    use "nvim-telescope/telescope.nvim"
+
+    -- cmp plugins
+    use "hrsh7th/nvim-cmp" -- The completion plugin
+    use "hrsh7th/cmp-buffer" -- buffer completions
+    use "hrsh7th/cmp-path" -- path completions
+    use "hrsh7th/cmp-cmdline" -- cmdline completions
+
+    -- snippets
+    use "L3MON4D3/LuaSnip" --snippet engine
+    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            require("which-key").setup{}
+        end
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
