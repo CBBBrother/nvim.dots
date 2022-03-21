@@ -23,8 +23,8 @@ keymap("i", "<leader>r", "<ESC>:Telescope resume<CR>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<CR>", opts)
 keymap("i", "<leader>b", "<ESC>:Telescope buffers<CR>", opts)
 
-keymap("n", "<leader>b", ":Telescope live_grep<CR>", opts)
-keymap("i", "<leader>b", "<ESC>:Telescope live_grep<CR>", opts)
+keymap("n", "<leader>g", ":Telescope live_grep<CR>", opts)
+keymap("i", "<leader>g", "<ESC>:Telescope live_grep<CR>", opts)
 
 keymap("n", "<leader>/", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("i", "<leader>/", "<ESC>:Telescope current_buffer_fuzzy_find<CR>", opts)
