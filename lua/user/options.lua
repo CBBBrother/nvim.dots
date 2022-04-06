@@ -33,7 +33,7 @@ options = {
 
 vim.opt.shortmess:append "c"
 
-vim.opt.listchars = { eol = '↲', space = '•', tab = '» ', nbsp = '☠', trail = '⌷' }
+vim.opt.listchars = { eol = '↲', space = '•', tab = '» ', nbsp = '☠', trail = '⌷', extends = '…', precedes = '…', conceal = '┊' }
 
 vim.opt.list = true
 
