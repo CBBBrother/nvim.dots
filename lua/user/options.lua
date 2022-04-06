@@ -33,6 +33,10 @@ options = {
 
 vim.opt.shortmess:append "c"
 
+vim.opt.listchars = { eol = '↲', space = '•', tab = '» ', nbsp = '☠', trail = '⌷' }
+
+vim.opt.list = true
+
 for i,j in pairs(options) do
     vim.opt[i] = j
 end
