@@ -28,3 +28,4 @@ keymap("i", "<leader>g", "<ESC>:Telescope live_grep<CR>", opts)
 
 keymap("n", "<leader>/", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("i", "<leader>/", "<ESC>:Telescope current_buffer_fuzzy_find<CR>", opts)
+keymap("t", "nn", "<C-\\><C-n>", opts)
